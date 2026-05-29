@@ -1,0 +1,10 @@
+[package]
+name = "rvim"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal Vim clone in Rust"
+
+[dependencies]
+crossterm = "0.28"
+serde = { version = "1", features = ["derive"] }
+toml = "1.1"

@@ -1,0 +1,6 @@
+// verify DEFAULT_CONFIG is valid TOML
+#[test]
+fn default_config_is_valid_toml() {
+    let result: Result<Config, _> = toml::from_str(DEFAULT_CONFIG);
+    assert!(result.is_ok(), "Default config should parse: {:?}", result.err());
+}
